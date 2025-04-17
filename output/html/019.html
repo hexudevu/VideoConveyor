@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .chat {
+            width: 100%;
+            max-width: 600px;
+            background-color: transparent;
+            padding: 20px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .msg {
+            padding: 10px 14px;
+            border-radius: 16px;
+            font-size: 17px;
+            line-height: 1.4;
+            position: relative;
+            word-wrap: break-word;
+            background-clip: padding-box;
+            max-width: 75%;
+            display: inline-block;
+        }
+
+        .left {
+            align-self: flex-start;
+            background-color: rgba(38, 38, 38, 0.9);
+            color: white;
+            border-bottom-left-radius: 4px;
+        }
+
+        .right {
+            align-self: flex-end;
+            background-color: rgba(92, 84, 163, 0.9); /* сиреневый тг */
+            color: white;
+            border-bottom-right-radius: 4px;
+        }
+
+        .time {
+            font-size: 11px;
+            color: rgba(255,255,255,0.4);
+            position: absolute;
+            bottom: 4px;
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="chat">
+        <div class="msg left"><b>привет!</b> как твои дела?<div class="time">10:12</div></div>
+<div class="msg right">о, привет! <i>да так, нормально</i>, работаю над чем-то большим.<div class="time">10:13</div></div>
+<div class="msg left">что за проект? чем занимаешься?<div class="time">10:12</div></div>
+<div class="msg right">строю движок для игры, ну и саму игру, она будет похожа на <b><i>Rain World</i></b>, но с упором на <u>детективный элемент</u> и <b>экосистему</b>.<div class="time">10:13</div></div>
+<div class="msg right">мир будет живым, взаимодействовать будет <i>каждое существо</i>, а ты как путешественник будешь за этим наблюдать.<div class="time">10:13</div></div>
+<div class="msg right">но самое интересное — экосистема меняется в зависимости от твоих действий, и последствия будут неожиданными.<div class="time">10:13</div></div>
+<div class="msg left">звучит интересно! это 2D или 3D?<div class="time">10:12</div></div>
+<div class="msg right"><b>2.5D</b>, такая скроллинг-система, но мир будет живым, с динамическими событиями.<div class="time">10:13</div></div>
+<div class="msg right">я планирую сделать элементы случайных событий, взаимодействие с природой, эволюцию всех существ...<div class="time">10:13</div></div>
+<div class="msg left">звучит как что-то совсем новое. ты один работаешь над этим?<div class="time">10:12</div></div>
+<div class="msg right">да, работаю один. использую <i>Unity</i> для основного движка, а для генерации мира и пайплайнов — <b>Python</b>.<div class="time">10:13</div></div>
+<div class="msg right">тоже автоматизирую тесты, чтобы всё работало как нужно. так что ничего не сломается.<div class="time">10:13</div></div>
+<div class="msg left">а почему Python, если юнити? не проще было бы всё на одном языке?<div class="time">10:12</div></div>
+<div class="msg right"><i>Python</i> помогает мне с контентом и генерацией. удобнее писать тесты и автоматизировать пайплайн.<div class="time">10:13</div></div>
+<div class="msg left">логично, так всё будет быстрее. а что ещё интересного будет в игре?<div class="time">10:12</div></div>
+<div class="msg right">есть задумка с союзниками-ИИ. их можно будет вырастить, и они будут эволюционировать в зависимости от твоих решений.<div class="time">10:13</div></div>
+<div class="msg right">к тому же, сам персонаж будет меняться, но ты этого не заметишь сразу — это всё <b>неявная эволюция</b>.<div class="time">10:13</div></div>
+<div class="msg left">звучит круто! жду с нетерпением, когда сможешь показать.<div class="time">10:12</div></div>
+<div class="msg right">да, сейчас тестирую механики. многое уже работает, но нужно время, чтобы всё стабилизировать.<div class="time">10:13</div></div>
+<div class="msg right">работы много, но игра выглядит перспективно, надеюсь, получится.<div class="time">10:13</div></div> <!-- Здесь будут подставляться сообщения -->
+    </div>
+</body>
+</html>
